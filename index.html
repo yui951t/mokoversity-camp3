@@ -53,6 +53,7 @@
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
+
 <div class="row"></div>
 	<div class="col-md-12"></div>
 		<div id="main"><canvas id="game"></canvas></div>
@@ -72,6 +73,11 @@ canvas.height = 320;
 ctx.fillStyle = 'red';
 ctx.beginPath();
 ctx.arc(100, 150, 50, 0, Math.PI * 2 , true);
+ctx.fill();
+
+ctx.fillStyle = 'black';
+ctx.beginPath();
+ctx.arc(75, 150, 10, 0, Math.PI * 2 , true);
 ctx.fill();
 }) ();
  </script>
