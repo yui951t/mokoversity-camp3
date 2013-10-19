@@ -56,9 +56,26 @@
 
 <div class="row"></div>
 	<div class="col-md-12"></div>
-		<div id="main"><canvas id="game"></canvas></div>
+		<div id="abc"><canvas id="game"></canvas></div>
+<script >
+(function() {
+        var canvas = document.getElementById('game');
+        var ctx = canvas.getContext('2d');
 
-<script type="text/javascript" src="main.js"></script>
+    var ballX = Math.floor(Math.random() * 300),
+        ballY = Math.floor(Math.random() * 500),
+        ballR = Math.floor(Math.random() * 100);
+
+        canvas.width = 480;
+        canvas.height = 320;
+
+        ctx.fillStyle = 'black';
+        ctx.beginPath();
+        ctx.arc(ballX, ballY, ballR, 0, Math.PI * 2 , true);
+        ctx.fill();
+}) ();
+
+</script>
  
  
 </body>
